@@ -1,7 +1,5 @@
 import React, { FC } from 'react';
 
-import { COLORS } from '../colors';
-
 interface Props {
   selected: boolean;
   activeColor: string;
