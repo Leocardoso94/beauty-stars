@@ -1,8 +1,20 @@
 /* add css styles here (optional) */
 
-.test {
-  display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+.wrapper {
+}
+
+.wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.wrapper ul li {
+  cursor: pointer;
+  position: relative;
+}
+
+.wrapper ul li:not(:last-child) {
+  margin: 0 16px 0 0;
 }

@@ -1,13 +1,17 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import ExampleComponent from 'beauty-stars'
+import BeautyStars from 'beauty-stars';
 
 export default class App extends Component {
-  render () {
+  state = { value: 0 };
+  render() {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <BeautyStars
+          value={this.state.value}
+          onChange={value => this.setState({ value })}
+        />
       </div>
-    )
+    );
   }
 }

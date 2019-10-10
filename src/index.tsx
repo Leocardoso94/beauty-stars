@@ -1,23 +1,40 @@
 /**
- * @class ExampleComponent
+ * @class BeautyStars
  */
 
-import * as React from 'react'
+import React, { FC } from 'react';
 
-import styles from './styles.css'
+import styles from './styles.css';
+import Star from './components/Star';
+import { COLORS } from './colors';
 
-export type Props = { text: string }
-
-export default class ExampleComponent extends React.Component<Props> {
-  render() {
-    const {
-      text
-    } = this.props
-
-    return (
-      <div className={styles.test}>
-        Example Component: {text}
-      </div>
-    )
-  }
+export interface Props {
+  text: string;
+  maxStars?: number;
+  value?: number;
+  onChange?: (newStar: number) => void;
 }
+
+const BeautyStars: FC<Props> = ({ maxStars = 5, value = 0, onChange }) => {
+  return (
+    <div className={styles.wrapper}>
+      <ul style={{ color: COLORS.inactive }}>
+        {Array(maxStars)
+          .fill(null)
+          .map((_, i) => i + 1)
+          .map(n => (
+            <li
+              key={n}
+              onClick={() => {
+                if (onChange) onChange(n);
+              }}
+            >
+              <Star selected={n <= value} />
+            </li>
+          ))}
+      </ul>
+    </div>
+  );
+};
+
+export default BeautyStars;
