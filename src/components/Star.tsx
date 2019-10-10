@@ -4,7 +4,7 @@ interface Props {
   selected: boolean;
   activeColor: string;
   inactiveColor: string;
-  size: number;
+  size: number | string;
 }
 
 const Star: FC<Props> = ({ selected, activeColor, inactiveColor, size }) => {
