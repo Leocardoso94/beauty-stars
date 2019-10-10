@@ -9,7 +9,7 @@ export interface Props {
   onChange?: (newStar: number) => void;
   activeColor?: string;
   inactiveColor?: string;
-  size?: number;
+  size?: number | string;
 }
 
 const BeautyStars: FC<Props> = ({

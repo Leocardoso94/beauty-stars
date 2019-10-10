@@ -43,6 +43,19 @@ export default class App extends Component {
 }
 ```
 
+### API
+
+This a list of props that you can pass down to the component:
+
+| Property             | Description                                                | Default value | type     |
+| -------------------- | ---------------------------------------------------------- | ------------- | -------- |
+| `maxStars`           | How many total stars you want                              | 5             | number   |
+| `value`              | Set rating value                                           | 0             | number   |
+| `inactiveColor`      | Color of inactive star (this supports any CSS valid value) | `#121621`     | string   |
+| `activeColor`        | Color of selected or active star                           | `#FFED76`     | string   |
+| `size`               | Size of stars (in px)                                      | `36px`        | string   |
+| `onChange(newValue)` | Will be invoked any time the rating is changed             | `undefined`   | function |
+
 ## Author
 
 👤 **Leocardoso94**
