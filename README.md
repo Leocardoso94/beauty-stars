@@ -13,6 +13,8 @@
 
 > A simple and beauty star rating for React projects
 
+![](https://raw.githubusercontent.com/Leocardoso94/beauty-stars/master/gif.gif)
+
 ## Install
 
 ```bash
