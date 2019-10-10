@@ -1,9 +1,4 @@
-/**
- * @class BeautyStars
- */
-
 import React, { FC } from 'react';
-
 import styles from './styles.css';
 import Star from './components/Star';
 import { COLORS } from './colors';
