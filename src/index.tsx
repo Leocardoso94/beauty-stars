@@ -9,7 +9,6 @@ import Star from './components/Star';
 import { COLORS } from './colors';
 
 export interface Props {
-  text: string;
   maxStars?: number;
   value?: number;
   onChange?: (newStar: number) => void;
@@ -24,6 +23,7 @@ const BeautyStars: FC<Props> = ({ maxStars = 5, value = 0, onChange }) => {
           .map((_, i) => i + 1)
           .map(n => (
             <li
+              title={`${n} star`}
               key={n}
               onClick={() => {
                 if (onChange) onChange(n);
