@@ -4,17 +4,18 @@ interface Props {
   selected: boolean;
   activeColor: string;
   inactiveColor: string;
+  size: number;
 }
 
-const Star: FC<Props> = ({ selected, activeColor, inactiveColor }) => {
+const Star: FC<Props> = ({ selected, activeColor, inactiveColor, size }) => {
   return (
     <svg
       style={{
         color: selected ? activeColor : inactiveColor,
         fill: selected ? 'rgba(0, 0, 0, 0.02)' : 'rgba(0, 0, 0, 0.04)',
         display: 'block',
-        height: 36,
-        width: 36,
+        height: size,
+        width: size,
       }}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 36 34"

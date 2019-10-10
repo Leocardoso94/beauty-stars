@@ -9,6 +9,7 @@ export interface Props {
   onChange?: (newStar: number) => void;
   activeColor?: string;
   inactiveColor?: string;
+  size?: number;
 }
 
 const BeautyStars: FC<Props> = ({
@@ -17,6 +18,7 @@ const BeautyStars: FC<Props> = ({
   onChange,
   activeColor = COLORS.active,
   inactiveColor = COLORS.inactive,
+  size = 36,
 }) => {
   return (
     <div className={styles.wrapper}>
@@ -36,6 +38,7 @@ const BeautyStars: FC<Props> = ({
                 selected={n <= value}
                 activeColor={activeColor}
                 inactiveColor={inactiveColor}
+                size={size}
               />
             </li>
           ))}

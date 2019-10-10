@@ -26,6 +26,12 @@ describe('BeautyStars', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it('render correctly size', () => {
+    const component = renderer.create(<BeautyStars value={4} size={70} />);
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
   it('render 7 stars', () => {
     const component = renderer.create(<BeautyStars value={3} maxStars={7} />);
     let tree = component.toJSON();
