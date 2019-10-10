@@ -7,12 +7,20 @@ export interface Props {
   maxStars?: number;
   value?: number;
   onChange?: (newStar: number) => void;
+  activeColor?: string;
+  inactiveColor?: string;
 }
 
-const BeautyStars: FC<Props> = ({ maxStars = 5, value = 0, onChange }) => {
+const BeautyStars: FC<Props> = ({
+  maxStars = 5,
+  value = 0,
+  onChange,
+  activeColor = COLORS.active,
+  inactiveColor = COLORS.inactive,
+}) => {
   return (
     <div className={styles.wrapper}>
-      <ul style={{ color: COLORS.inactive }}>
+      <ul style={{ color: inactiveColor }}>
         {Array(maxStars)
           .fill(null)
           .map((_, i) => i + 1)
@@ -24,7 +32,11 @@ const BeautyStars: FC<Props> = ({ maxStars = 5, value = 0, onChange }) => {
                 if (onChange) onChange(n);
               }}
             >
-              <Star selected={n <= value} />
+              <Star
+                selected={n <= value}
+                activeColor={activeColor}
+                inactiveColor={inactiveColor}
+              />
             </li>
           ))}
       </ul>

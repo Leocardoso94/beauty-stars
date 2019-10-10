@@ -18,6 +18,13 @@ describe('BeautyStars', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it('render correctly color', () => {
+    const component = renderer.create(
+      <BeautyStars value={4} activeColor="#faf" inactiveColor="#a0a" />,
+    );
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 
   it('render 7 stars', () => {
     const component = renderer.create(<BeautyStars value={3} maxStars={7} />);

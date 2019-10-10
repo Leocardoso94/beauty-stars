@@ -4,13 +4,15 @@ import { COLORS } from '../colors';
 
 interface Props {
   selected: boolean;
+  activeColor: string;
+  inactiveColor: string;
 }
 
-const Star: FC<Props> = ({ selected }) => {
+const Star: FC<Props> = ({ selected, activeColor, inactiveColor }) => {
   return (
     <svg
       style={{
-        color: selected ? COLORS.active : COLORS.inactive,
+        color: selected ? activeColor : inactiveColor,
         fill: selected ? 'rgba(0, 0, 0, 0.02)' : 'rgba(0, 0, 0, 0.04)',
         display: 'block',
         height: 36,
