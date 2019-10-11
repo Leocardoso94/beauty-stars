@@ -9,6 +9,7 @@ export interface Props {
   activeColor?: string;
   inactiveColor?: string;
   size?: number | string;
+  editable?: boolean;
 }
 
 const BeautyStars: FC<Props> = ({
@@ -18,6 +19,7 @@ const BeautyStars: FC<Props> = ({
   activeColor = COLORS.active,
   inactiveColor = COLORS.inactive,
   size = 36,
+  editable = true,
 }) => (
   <ul
     style={{
@@ -36,7 +38,7 @@ const BeautyStars: FC<Props> = ({
           title={`${starNumber} star`}
           key={starNumber}
           onClick={() => {
-            if (onChange) onChange(starNumber);
+            if (onChange && editable) onChange(starNumber);
           }}
           style={{
             cursor: 'pointer',
