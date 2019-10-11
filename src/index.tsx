@@ -10,6 +10,7 @@ export interface Props {
   activeColor?: string;
   inactiveColor?: string;
   size?: number | string;
+  editable?: boolean;
 }
 
 const BeautyStars: FC<Props> = ({
@@ -19,6 +20,7 @@ const BeautyStars: FC<Props> = ({
   activeColor = COLORS.active,
   inactiveColor = COLORS.inactive,
   size = 36,
+  editable = true,
 }) => {
   return (
     <div className={styles.wrapper}>
@@ -31,7 +33,7 @@ const BeautyStars: FC<Props> = ({
               title={`${n} star`}
               key={n}
               onClick={() => {
-                if (onChange) onChange(n);
+                if (onChange && editable) onChange(n);
               }}
             >
               <Star
