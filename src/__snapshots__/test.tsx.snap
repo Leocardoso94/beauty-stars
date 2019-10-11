@@ -22,6 +22,7 @@ exports[`BeautyStars render 7 stars 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.02)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -45,6 +46,7 @@ exports[`BeautyStars render 7 stars 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.02)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -68,6 +70,7 @@ exports[`BeautyStars render 7 stars 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.02)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -91,6 +94,7 @@ exports[`BeautyStars render 7 stars 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.04)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -114,6 +118,7 @@ exports[`BeautyStars render 7 stars 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.04)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -137,6 +142,7 @@ exports[`BeautyStars render 7 stars 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.04)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -160,6 +166,7 @@ exports[`BeautyStars render 7 stars 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.04)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -198,6 +205,7 @@ exports[`BeautyStars render correctly 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.04)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -221,6 +229,7 @@ exports[`BeautyStars render correctly 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.04)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -244,6 +253,7 @@ exports[`BeautyStars render correctly 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.04)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -267,6 +277,7 @@ exports[`BeautyStars render correctly 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.04)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -290,6 +301,7 @@ exports[`BeautyStars render correctly 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.04)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -328,6 +340,7 @@ exports[`BeautyStars render correctly 5 stars rating 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.02)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -351,6 +364,7 @@ exports[`BeautyStars render correctly 5 stars rating 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.02)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -374,6 +388,7 @@ exports[`BeautyStars render correctly 5 stars rating 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.02)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -397,6 +412,7 @@ exports[`BeautyStars render correctly 5 stars rating 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.02)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -420,6 +436,7 @@ exports[`BeautyStars render correctly 5 stars rating 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.02)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -458,6 +475,7 @@ exports[`BeautyStars render correctly color 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.02)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -481,6 +499,7 @@ exports[`BeautyStars render correctly color 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.02)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -504,6 +523,7 @@ exports[`BeautyStars render correctly color 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.02)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -527,6 +547,7 @@ exports[`BeautyStars render correctly color 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.02)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -550,6 +571,7 @@ exports[`BeautyStars render correctly color 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.04)",
             "height": 36,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 36,
           }
         }
@@ -588,6 +610,7 @@ exports[`BeautyStars render correctly size 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.02)",
             "height": 70,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 70,
           }
         }
@@ -611,6 +634,7 @@ exports[`BeautyStars render correctly size 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.02)",
             "height": 70,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 70,
           }
         }
@@ -634,6 +658,7 @@ exports[`BeautyStars render correctly size 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.02)",
             "height": 70,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 70,
           }
         }
@@ -657,6 +682,7 @@ exports[`BeautyStars render correctly size 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.02)",
             "height": 70,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 70,
           }
         }
@@ -680,6 +706,7 @@ exports[`BeautyStars render correctly size 1`] = `
             "display": "block",
             "fill": "rgba(0, 0, 0, 0.04)",
             "height": 70,
+            "transition": "color 0.5s ease-in-out, fill 0.5s ease-in-out",
             "width": 70,
           }
         }
