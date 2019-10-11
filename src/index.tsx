@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import styles from './styles.css';
 import Star from './components/Star';
 import { COLORS } from './colors';
 
@@ -19,32 +18,41 @@ const BeautyStars: FC<Props> = ({
   activeColor = COLORS.active,
   inactiveColor = COLORS.inactive,
   size = 36,
-}) => {
-  return (
-    <div className={styles.wrapper}>
-      <ul style={{ color: inactiveColor }}>
-        {Array(maxStars)
-          .fill(null)
-          .map((_, i) => i + 1)
-          .map(n => (
-            <li
-              title={`${n} star`}
-              key={n}
-              onClick={() => {
-                if (onChange) onChange(n);
-              }}
-            >
-              <Star
-                selected={n <= value}
-                activeColor={activeColor}
-                inactiveColor={inactiveColor}
-                size={size}
-              />
-            </li>
-          ))}
-      </ul>
-    </div>
-  );
-};
+}) => (
+  <ul
+    style={{
+      color: inactiveColor,
+      margin: 0,
+      padding: 0,
+      listStyle: 'none',
+      display: 'flex',
+    }}
+  >
+    {Array(maxStars)
+      .fill(null)
+      .map((_, i) => i + 1)
+      .map(starNumber => (
+        <li
+          title={`${starNumber} star`}
+          key={starNumber}
+          onClick={() => {
+            if (onChange) onChange(starNumber);
+          }}
+          style={{
+            cursor: 'pointer',
+            position: 'relative',
+            marginRight: starNumber !== maxStars ? 16 : 0,
+          }}
+        >
+          <Star
+            selected={starNumber <= value}
+            activeColor={activeColor}
+            inactiveColor={inactiveColor}
+            size={size}
+          />
+        </li>
+      ))}
+  </ul>
+);
 
 export default BeautyStars;
