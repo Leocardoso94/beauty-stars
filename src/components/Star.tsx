@@ -16,6 +16,7 @@ const Star: FC<Props> = ({ selected, activeColor, inactiveColor, size }) => {
         display: 'block',
         height: size,
         width: size,
+        transition: 'color 0.5s ease-in-out, fill 0.5s ease-in-out'
       }}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 36 34"
