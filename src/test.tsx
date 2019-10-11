@@ -38,7 +38,7 @@ describe('BeautyStars', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('CheckboxWithLabel changes the text after click', () => {
+  it('CheckboxWithLabel changes the value after click', () => {
     let value = 0;
     const { getByTitle } = render(
       <BeautyStars value={value} onChange={newValue => (value = newValue)} />,
@@ -47,5 +47,20 @@ describe('BeautyStars', () => {
     fireEvent.click(getByTitle('4 star'));
 
     expect(value).toBe(4);
+  });
+
+  it('CheckboxWithLabel does not changes the value after click when editable is false', () => {
+    let value = 2;
+    const { getByTitle } = render(
+      <BeautyStars
+        value={value}
+        onChange={newValue => (value = newValue)}
+        editable={false}
+      />,
+    );
+
+    fireEvent.click(getByTitle('4 star'));
+
+    expect(value).toBe(2);
   });
 });
