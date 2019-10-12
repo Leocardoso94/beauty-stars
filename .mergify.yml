@@ -6,3 +6,11 @@ pull_request_rules:
     actions:
       merge:
         method: squash
+        
+  - name: automatic merge on CI success
+    conditions:
+      - status-success=continuous-integration/travis-ci/pr
+      - author=Leocardoso94
+    actions:
+      merge:
+        method: squash
