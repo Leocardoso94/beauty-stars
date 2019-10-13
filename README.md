@@ -1,8 +1,11 @@
 <h1 align="center">Welcome to beauty-stars 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <img src="https://img.shields.io/badge/node-%3E%3D8-blue.svg" />
-  <img src="https://img.shields.io/badge/npm-%3E%3D5-blue.svg" />
+  <a href='https://coveralls.io/github/Leocardoso94/beauty-stars?branch=master'>
+    <img src='https://coveralls.io/repos/github/Leocardoso94/beauty-stars/badge.svg?branch=master' alt='Coverage Status' />
+  </a>
+  <a href="https://badge.fury.io/js/beauty-stars">
+    <img src="https://badge.fury.io/js/beauty-stars.svg" alt="npm version" height="18">
+  </a>
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
