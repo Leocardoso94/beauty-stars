@@ -19,7 +19,8 @@
     "start": "rollup -c -w",
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "coverage": "yarn test --coverage && cat coverage/lcov.info | coveralls"
   },
   "dependencies": {},
   "peerDependencies": {
@@ -36,6 +37,7 @@
     "@types/react-test-renderer": "^16.9.0",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
+    "coveralls": "^3.0.7",
     "cross-env": "^5.1.4",
     "gh-pages": "^1.2.0",
     "react": "^16.4.1",
