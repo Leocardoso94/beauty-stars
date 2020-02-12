@@ -50,7 +50,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-typescript2": "^0.25.3",
+    "rollup-plugin-typescript2": "^0.26.0",
     "rollup-plugin-url": "^3.0.0",
     "typescript": "^2.8.3"
   },
