@@ -1,6 +1,6 @@
-import React, { FC } from 'react';
-import Star from './components/Star';
-import { COLORS } from './colors';
+import React, { FC } from "react";
+import Star from "./components/Star";
+import { COLORS } from "./colors";
 
 export interface Props {
   maxStars?: number;
@@ -9,7 +9,9 @@ export interface Props {
   activeColor?: string;
   inactiveColor?: string;
   size?: number | string;
+  gap?: number | string;
   editable?: boolean;
+  hideInactive?: boolean;
 }
 
 const BeautyStars: FC<Props> = ({
@@ -20,17 +22,19 @@ const BeautyStars: FC<Props> = ({
   inactiveColor = COLORS.inactive,
   size = 36,
   editable = true,
+  gap = 16,
+  hideInactive = false
 }) => (
   <ul
     style={{
       color: inactiveColor,
       margin: 0,
       padding: 0,
-      listStyle: 'none',
-      display: 'flex',
+      listStyle: "none",
+      display: "flex"
     }}
   >
-    {Array(maxStars)
+    {Array(hideInactive ? value : maxStars)
       .fill(null)
       .map((_, i) => i + 1)
       .map(starNumber => (
@@ -41,9 +45,9 @@ const BeautyStars: FC<Props> = ({
             if (onChange && editable) onChange(starNumber);
           }}
           style={{
-            cursor: 'pointer',
-            position: 'relative',
-            marginRight: starNumber !== maxStars ? 16 : 0,
+            cursor: "pointer",
+            position: "relative",
+            marginRight: starNumber !== maxStars ? gap : 0
           }}
         >
           <Star

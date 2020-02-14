@@ -29,9 +29,9 @@ yarn add beauty-stars
 ## Usage
 
 ```tsx
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import BeautyStars from 'beauty-stars';
+import BeautyStars from "beauty-stars";
 
 export default class App extends Component {
   state = { value: 0 };
@@ -59,6 +59,8 @@ This a list of props that you can pass down to the component:
 | `activeColor`        | Color of selected or active star                           | `#FFED76`     | string   |
 | `size`               | Size of stars (in px)                                      | `36px`        | string   |
 | `onChange(newValue)` | Will be invoked any time the rating is changed             | `undefined`   | function |
+| `hideInactive`       | Will hide inactive stars                                   | `false`       | boolean  |
+| `gap`                | Sets the gaps (gutters) between stars                      | 16px          | string   | number |
 
 ## Author
 
