@@ -1238,9 +1238,9 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^17.0.0":
-  version "17.0.3"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.3.tgz#ba6e215368501ac3826951eef2904574c262cc79"
-  integrity sha512-wYOUxIgs2HZZ0ACNiIayItyluADNbONl7kt8lkLjVK8IitMH5QMyAh75Fwhmo37r1m7L2JaFj03sIfxBVDvRAg==
+  version "17.0.12"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.12.tgz#e9a1add2abc4eb90ec7b1676a6e8567b147ab954"
+  integrity sha512-F0Kcg/W9Zakf9GnYQzM67QjeTlbBcE8UPOck3pjiW0K4vqXvmfm5UErg+83nkK4VIi8IixaA2gqYgI42UTq0TQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
